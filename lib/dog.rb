@@ -38,7 +38,7 @@ class Dog
       self.new_from_db(row)
     end
   end
-  
+
   def self.new_from_db(array)
     dog = self.new
     dog.id = array[0]
