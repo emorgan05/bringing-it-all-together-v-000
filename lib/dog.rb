@@ -28,9 +28,9 @@ class Dog
 
   def self.create(hash)
     dog = self.new
-    dog.id = hash.id
-    dog.name = hash.name
-    dog.breed = hash.breed
+    dog.id = hash[:id]
+    dog.name = hash[:name]
+    dog.breed = hash[:breed]
     dog.save
   end
 
