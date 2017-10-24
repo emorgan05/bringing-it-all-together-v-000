@@ -33,7 +33,7 @@ class Dog
     dog.breed = hash.breed
     dog.save
   end
-  
+
   def self.new_from_db(array)
     dog = self.new
     dog.id = array[0]
