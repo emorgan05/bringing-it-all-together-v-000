@@ -27,7 +27,7 @@ class Dog
   end
 
   def self.create(hash)
-    dog = self.new
+    dog = self.new(:name, :breed)
     dog.id = hash[:id]
     dog.name = hash[:name]
     dog.breed = hash[:breed]
