@@ -40,6 +40,12 @@ class Dog
     self
   end
 
+  def self.find_or_create_by(name:, breed:)
+    sql = "SELECT * FROM dogs WHERE name = ? AND breed = ?"
+    
+    dog = DB[:conn].execute(sql, )
+  end
+  
   def self.new_from_db(array)
     attributes_hash = { id: array[0], name: array[1], breed: array[2] }
     dog = self.new(attributes_hash)
