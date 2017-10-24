@@ -41,7 +41,7 @@ class Dog
 
   def self.new_from_db(array)
     binding.pry
-    attributes_hash = { id: array[0][0], name: array[0][1], breed: array[0][2] }
+    attributes_hash = { id: array[0], name: array[1], breed: array[2] }
     dog = self.new(attributes_hash)
   end
 
